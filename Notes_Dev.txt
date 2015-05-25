@@ -1,0 +1,116 @@
+node.js et npm
+--------------
+E:\nodejs
+
+npm install <-g> <nom_du_module>
+-g: global installe dans C:\Users\Emmanuel\AppData\Roaming\npm\node_modules
+sinon E:\nodejs\node_modules\npm\node_modules (se placer dans ce répertoire)
+
+Variable d'env. NODE_PATH=E:\nodejs\node_modules\npm\node_modules
+
+Installation a effectuer depuis fenêtre de commande du MS SDK Windows v7.1 (depuis Start Menu) pour éviter pb kernel31.lib à la compilation node-gyp
+(outils liés: MS Visual Studio C++ Express 2010 + MS SDK Windows 7.1)
+
+Modules installés:
+- sparknode
+- sparkcloud
+- spark (official SparkJS) => global install
+- spark-cli (spark command line) => global install
+- cylon (robotique spark)
+- mocha => module de test / global install
+- express (fmwk web)
+- nodeclipse (node.js sur eclipse)
+- web
+- bl (BufferList)
+- grunt
+- strftime (format time)
+- through2-map (Stream mapper)
+
+modules d'apprentissage:
+- levelmeup 
+- learnyounode => terminé (cf. C:\Users\Emmanuel\AppData\Roaming\npm\exos learnyounode)
+- functional-javascript-workshop => commencé
+- expressworks => commencé
+- test-anything
+- planetproto
+- promise-it-wont-hurt
+- async-you
+
+
+Autres modules possibles:
+- spark-io et johnny-five (nécessite voodoospark sur Spark Core)
+- npm level, jshint (?), mongoose (DB ?)
+
+
+Spark Core
+----------
+www.spark.io/login
+emmanuel.vandevelde@noos.fr Lalal@1805
+
+Outils liés:
+- cURL dans C:\Program Files\cURL pour envoyer des commandes HTML en commande en ligne
+- Texas Instruments Java applet pour module wifi CC3000 dans E:\TI
+- putty dans C:\Users\Emmanuel\Downloads
+- SparkCoreDriver pour Windows dans C:\Users\Emmanuel\Downloads
+
+- SparkDev dans E:\Spark Dev
+
+Sources GitHub dans E:\Workspace\spark
+
+Fritzing
+--------
+Pour les représentations graphiques des boards
+fritzing.org
+E:\fritzing (version 0.9)
+
+Python
+------
+v2.7 dans E:\Python27
+
+
+Outils de développement
+-----------------------
+- Eclipse (E:\eclipse) => target E:\Workspace
+- Eclipse pour Android (E:\Android) => target E:\Android\workspace
+- Eclipse pour Scala (E:\eclipsescala) => target E:\eclipsescala\coursera-workspace
+- NetBeans 7.4 (E:\NetBeans 7.4) => target E:\NetBeansProjects
+- JasperSoft Studio (E:\Jaspersoft) => target E:\Jaspersoft\JaspersoftWorkspace
+- MySQL Server 5.5 (C:\Program Files\MySQL) et Workbench 5.2 (E:\MySQL) => target E:\MySQL\MySQL Server 5.5\data
+- Glassfish 4 (E:\glassfish4)
+- Librairies Java dans E:\Workspace\libraries
+- Windows Express Desktop 2013 (nécessaire pour node spark-cli) => compte MS emmanuel.vandevelde@noos.fr Lalal@1805
+- Open SSL (C:\OpenSSL-Win32) pour spark-cli
+
+GitHub
+------
+Références dans E:\Workspace
+emmanuel.vandevelde@noos.fr Lalal@1805
+
+Chrome Developer Tools
+----------------------
+https://developer.chrome.com/devtools
+Google web design
+Blue griffon
+
+
+Books
+-----
+- DevDocs (site + offline)
+- Bash guide et Bash Reference Manual
+- Coursera Startup Engineering
+- Eloquent Javascript
+
+A downloader
+------------
+- UECLIDE : IDE générique développement C/C++ Arduino and co
+- Librairies Adafruit pour écran TFT 2.8'' et écran résistif (http://www.adafruit.com/products/1770 et https://learn.adafruit.com/adafruit-2-dot-8-color-tft-touchscreen-breakout-v2)
+- elias electronics
+
+- Bootstrap (=> outils de maquettage : LayouIt, Pingendo, BootPly, Divshot, Jetstrap payant)
+- Jquery
+
+- Noter coordonnées compte Dropbox
+
+A désinstaller
+--------------
+Visual Studio 2013
