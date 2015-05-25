@@ -99,6 +99,10 @@ Books
 - Bash guide et Bash Reference Manual
 - Coursera Startup Engineering
 - Eloquent Javascript
+- JQuery succinctly
+- JS Pocket Reference
+
+Voir aussi Mozilla Developer Network (MDN)
 
 A downloader
 ------------
