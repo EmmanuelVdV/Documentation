@@ -67,6 +67,12 @@ Python
 ------
 v2.7 dans E:\Python27
 
+Processing
+----------
+http://www.openprocessing.org/ => exemples (portefeuille Jean-no par exemple)
+Book Nature of Code : http://natureofcode.com/
+http://fr.flossmanuals.net/processing
+
 
 Outils de développement
 -----------------------
@@ -111,7 +117,7 @@ A downloader
 - Librairies Adafruit pour écran TFT 2.8'' et écran résistif (http://www.adafruit.com/products/1770 et https://learn.adafruit.com/adafruit-2-dot-8-color-tft-touchscreen-breakout-v2)
 - elias electronics
 
-- Bootstrap (=> outils de maquettage : LayouIt, Pingendo, BootPly, Divshot, Jetstrap payant)
+- Bootstrap (=> outils de maquettage : LayouIt, Pingendo, BootPly, Divshot, Jetstrap payant) => cours sur EdX
 - Jquery
 
 - Noter coordonnées compte Dropbox
