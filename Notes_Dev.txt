@@ -9,7 +9,7 @@ sinon E:\nodejs\node_modules\npm\node_modules (se placer dans ce répertoire)
 Variable d'env. NODE_PATH=E:\nodejs\node_modules\npm\node_modules
 
 Installation a effectuer depuis fenêtre de commande du MS SDK Windows v7.1 (depuis Start Menu) pour éviter pb kernel31.lib à la compilation node-gyp
-(outils liés: MS Visual Studio C++ Express 2010 + MS SDK Windows 7.1)
+(outils liés: MS Visual Studio C++ Express 2010 + MS SDK Windows 7.1 => compte MS emmanuel.vandevelde@noos.fr Lalal@1234@)
 
 Modules installés:
 - sparknode
@@ -84,7 +84,6 @@ Outils de développement
 - MySQL Server 5.5 (C:\Program Files\MySQL) et Workbench 5.2 (E:\MySQL) => target E:\MySQL\MySQL Server 5.5\data
 - Glassfish 4 (E:\glassfish4)
 - Librairies Java dans E:\Workspace\libraries
-- Windows Express Desktop 2013 (nécessaire pour node spark-cli) => compte MS emmanuel.vandevelde@noos.fr Lalal@1805
 - Open SSL (C:\OpenSSL-Win32) pour spark-cli
 
 GitHub
@@ -124,4 +123,4 @@ A downloader
 
 A désinstaller
 --------------
-Visual Studio 2013
+
