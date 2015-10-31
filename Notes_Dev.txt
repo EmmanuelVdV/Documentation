@@ -72,6 +72,8 @@ Processing
 http://www.openprocessing.org/ => exemples (portefeuille Jean-no par exemple)
 Book Nature of Code : http://natureofcode.com/
 http://fr.flossmanuals.net/processing
+Processingjs.org => transformation de code Processing en Javascript pour exécution dans page web
+http://www.generative-gestaltung.de/
 
 
 Outils de développement
