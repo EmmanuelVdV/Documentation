@@ -1,0 +1,91 @@
+Installation Raspberry without keyboard and monitor
+- Download Raspbian image (raspberry.org)
+- Install SD card formatter (www.sdcard.org > Donwnloads)
+- Install Win32DiskImager (SourceForge)
+- Quick format the SD Card
+- Write Raspbian image to SDCard
+
+a. get IP address from network router
+- Install SD Card on Raspberry, connect to network and boot
+- Get IP from router: http://mvartan.com/2013/02/10/setting-up-a-headless-raspberry-pi/
+
+b. set IP address on the raspbian before boot
+- http://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-beginners/ and http://elinux.org/RPi_cmdline.txt
+
+- Putty SSH 192.168.0.2 (with computer linked on same network)
+- sudo raspi-config
+=> extend partition
+=> choose locale fr_FR.UTF8
+
+- Configure avahi-daemon and "Bonjour"
+sudo apt-get install avahi-daemon => SSH raspberrypi.local 
+http://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-beginners/ and http://elinux.org/RPi_cmdline.txt
+http://elinux.org/RPi_Advanced_Setup#Setting_up_for_remote_access_.2F_headless_operation
+
+- Install VNC to share screen
+http://www.framboise314.fr/prenez-la-main-a-distance-sur-votre-raspberry-pi-avec-vnc/
+
+
+Reconnexion
+-----------
+Brancher le Raspberry sur le routeur wifi
+a) méthode 1 : Regarder l'adresse IP par l'interface Netgear + Putty SSH "adresseIP" récupérée sur Netgear + port 22
+b) méthode 2 : Putty "raspberrypi.local" + port 22
+login : pi
+mot de passe : raspberry
+
+
+Packages installés / désinstallés
+---------------------------------
+- 11/11/2015 : +hostpadp +isc-dhcp-server -ifplugd
+- 12/11/2015 : +ifplugd 
+
+
+Configuration DWA 131 de D-LINK
+-------------------------------
+Changement du power management dans /etc/modprobe.d/8192cu.conf
+installation driver 8192eu mais ne semble pas faire de différence (pas chargé)
+Dernière tentative : installation hostapd d'Adafruit (hostapd original conservé) et reconfig de /etc/hostapd/hostapd.conf avec driver=rtl817xdrv => semble fonctionner
+wget http://www.adafruit.com/downloads/adafruit_hostapd.zip 
+unzip adafruit_hostapd.zip 
+sudo mv /usr/sbin/hostapd /usr/sbin/hostapd.ORIG 
+sudo mv hostapd /usr/sbin
+sudo chmod 755 /usr/sbin/hostapd
+https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point
+
+Installation node 0.12
+----------------------
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install -y nodejs
+
+Acheter
+- clé wifi (KUBII 8,90€)
+
+[[[[- Servo HAT Adafruit 16-Channel 12-bit PWM / Servo HAT (KUBII 22,50€, SeemaGeek 21€) (RasPi Robot Board v2 by MonkMakes 50,50€ KUBII) (PiBorg - PicoBorg Reverse - Advanced Motor Controller £29.99 modmypi) (Adafruit PWM/Servo Driver - 16 Channel 12 BIT (PCA9685) £10.99 modmypi ou 14.95$ Adafruit ou 16,75€ Gotronic ou 15€ GenerationRobots) ]]]]
+
+- Puce L293D ou SN7544
+- Microchip - MCP3208-CI/P - Convertisseur A/N 12 BITS (KUBII 4,40€) (or MCP3008 - 8-Channel 10-Bit ADC With SPI Interface Adafruit 3.75$)
+- Alimentation 9V (pile 9V ou boitier piles 1.5V) pour moteurs
+- Batterie 5V pour raspberry (Powerbank USB pour Raspberry Pi – 4400 mAh – 5V @ 1A 30,50€ Génération Robots)
+- Pi camera + écran PITFT
+
+
+Tutoriel : https://learn.adafruit.com/adafruit-raspberry-pi-lesson-9-controlling-a-dc-motor/parts
+I2C support : https://www.abelectronics.co.uk/i2c-raspbian-wheezy/info.aspx
+Tutoriel 2 DC motors w/ raspberry :
+http://computers.tutsplus.com/tutorials/controlling-dc-motors-using-python-with-a-raspberry-pi--cms-20051
+http://www.linuxcircle.com/2015/06/02/how-to-drive-2-dc-motors-with-raspberry-pi-2-gpio-and-drv8833-chip/
+http://roverpi.blogspot.fr/2013/07/controlling-two-dc-motors-with.html
+http://mchobby.be/wiki/index.php?title=RASP-DRV8835
+
+Gotronic
+- Carte Commande de 2 moteurs CC DRV8833 2x1,2A Pololu 5,4€
+- Motoréducteurs Pololu 17,40€ (x2) (ref 997) 150:1
+- 2 supports noirs (ref 989) 5,50€
+- roue libre 3/4'' (ref 955) 3,3€
+- Paire de roues rouges Pololu 80 x 10 mm 10,10€ (ref 1431)
+- Paire de moyeux alu (ref 1996) pour axe de 3 mm 6,50€
+
+http://wiringpi.com/wiringpi-updated-for-the-new-pi-v2/ => lien vers version python ou node.js
+
+Encodeur ?
