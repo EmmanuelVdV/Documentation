@@ -122,6 +122,8 @@ A downloader
 - Bootstrap (=> outils de maquettage : LayouIt, Pingendo, BootPly, Divshot, Jetstrap payant) => cours sur EdX
 - Jquery
 
+- Voir WSO2 et ActiveMQ
+
 - Noter coordonnées compte Dropbox
 
 A désinstaller
