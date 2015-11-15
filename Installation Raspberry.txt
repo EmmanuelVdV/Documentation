@@ -85,9 +85,16 @@ implémenter liste des MAC authorisées dans hostapd.conf
 route get "/" => liste les MAC adresses connectées + état du service hostapd + bouton "arrêter" / "démarrer" service (+action="/stopservice" ou "/startservice")
 route post "/stopservice" + route "startservice" (depuis bouton) avec script arrêt / démarrage + res.redirect("/")
 
+NOTE !!! faire une seule commande sans grep du failed => vérifier présence du failed sur première ligne puis liste des MAC sur lignes suivantes
+"message est:hostapd is running.
+xx:xx:xx:xx:xx"
+ou
+"message est:hostapd is not running ... failed!"
+
 Commandes :
 -----------
 ps aux => liste les processus
+sudo service <nom_service> status|start|stop|restart
 tar xzvf < nom_archive >.tar.gz
 unzip <nom_archive>.zip
 
@@ -95,6 +102,7 @@ pour les connected devices :
 sudo arp
 fichier /var/lib/dhcp/dhcp.leases => sans doute pas bonne solution
 sudo hostapd_cli all_sta | grep "^[0-9][0-9]:" => renvoie les MAC adresses des devices connectés
+sudo service hostapd status | grep -o failed => si renvoie "failed" alors arrêté, sinon le service tourne
 
 
 
