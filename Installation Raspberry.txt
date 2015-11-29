@@ -79,11 +79,6 @@ http://code.tutsplus.com/tutorials/build-a-complete-mvc-website-with-expressjs--
 http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
 
 
-A continuer :
--------------
-implémenter liste des MAC authorisées dans hostapd.conf
-
-
 Commandes :
 -----------
 ps aux => liste les processus
