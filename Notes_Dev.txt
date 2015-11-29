@@ -100,6 +100,20 @@ https://developer.chrome.com/devtools
 Google web design
 Blue griffon
 
+VirtualBox
+----------
+Debian => debian / evan/mdphabituel (idem root)
+
+Git
+---
+git add -A => ajoute tous les fichiers modifiés
+git status => indique si des fichiers sont à consolider
+git commit -m "commit_message" => commit les fichiers modifiés
+git push / git push origin master => pousse les modifications sur github
+git remote -v => donne la liste des repos distants
+git remote add upstream url => ajoute un repo distant
+git pull => récupère les fichiers depuis le repor distant
+git clone => récupère un repo la première fois
 
 Books
 -----

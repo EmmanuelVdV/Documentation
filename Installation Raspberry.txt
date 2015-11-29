@@ -1,6 +1,6 @@
 Installation Raspberry without keyboard and monitor
 - Download Raspbian image (raspberry.org)
-- Install SD card formatter (www.sdcard.org > Donwnloads)
+- Install SD card formatter (www.sdcard.org > Downloads)
 - Install Win32DiskImager (SourceForge)
 - Quick format the SD Card
 - Write Raspbian image to SDCard
@@ -82,14 +82,7 @@ http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
 A continuer :
 -------------
 implémenter liste des MAC authorisées dans hostapd.conf
-route get "/" => liste les MAC adresses connectées + état du service hostapd + bouton "arrêter" / "démarrer" service (+action="/stopservice" ou "/startservice")
-route post "/stopservice" + route "startservice" (depuis bouton) avec script arrêt / démarrage + res.redirect("/")
 
-NOTE !!! faire une seule commande sans grep du failed => vérifier présence du failed sur première ligne puis liste des MAC sur lignes suivantes
-"message est:hostapd is running.
-xx:xx:xx:xx:xx"
-ou
-"message est:hostapd is not running ... failed!"
 
 Commandes :
 -----------
