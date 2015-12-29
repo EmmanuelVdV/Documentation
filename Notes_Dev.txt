@@ -101,6 +101,7 @@ Blue griffon
 VirtualBox
 ----------
 Debian => debian / evan/mdphabituel (idem root)
+image debian-live-8.2.0-i386-xfce-desktop.iso
 
 Git
 ---

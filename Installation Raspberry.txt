@@ -77,6 +77,7 @@ ps aux => liste les processus
 sudo service <nom_service> status|start|stop|restart
 tar xzvf < nom_archive >.tar.gz
 unzip <nom_archive>.zip
+df -h => espace disque disponible sur toutes les partitions montées
 
 pour les connected devices : 
 sudo arp
