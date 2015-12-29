@@ -1,5 +1,0 @@
-evan / lalala
-root / lalala
-
-Machine : debian
-evan@debianevan.org

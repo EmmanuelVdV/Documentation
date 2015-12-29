@@ -28,14 +28,6 @@ http://www.framboise314.fr/prenez-la-main-a-distance-sur-votre-raspberry-pi-avec
 
 - Install WinSCP on PC for file transfer
 
-Reconnexion
------------
-Brancher le Raspberry sur le routeur wifi
-a) méthode 1 : Regarder l'adresse IP par l'interface Netgear + Putty SSH "adresseIP" récupérée sur Netgear + port 22
-b) méthode 2 : Putty "raspberrypi.local" + port 22
-login : pi
-mot de passe : raspberry
-
 
 Packages installés / désinstallés
 ---------------------------------

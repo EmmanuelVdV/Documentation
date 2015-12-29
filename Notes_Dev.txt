@@ -45,7 +45,6 @@ Autres modules possibles:
 Spark Core
 ----------
 www.spark.io/login
-emmanuel.vandevelde@noos.fr Lalal@1805
 
 Outils liés:
 - cURL dans C:\Program Files\cURL pour envoyer des commandes HTML en commande en ligne
@@ -92,7 +91,6 @@ Outils de développement
 GitHub
 ------
 Références dans E:\Workspace
-emmanuel.vandevelde@noos.fr Lalal@1805
 
 Chrome Developer Tools
 ----------------------
