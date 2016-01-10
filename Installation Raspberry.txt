@@ -38,7 +38,7 @@ Packages installés / désinstallés
 
 Configuration DWA 131 de D-LINK
 -------------------------------
-Changement du power management dans /etc/modprobe.d/8192cu.conf
+Changement du power management dans /etc/modprobe.d/8192cu.conf et /etc/network/interfaces
 installation driver 8192eu mais ne semble pas faire de différence (pas chargé)
 
 Solution 1 (voir https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point) :
@@ -56,7 +56,7 @@ Solution 2 :
 	sudo mv hostapd /usr/sbin (depuis le répertoire de compilation)
 	Ajout de  ctrl_interface=/var/run/hostapd et ctrl_interface_group=0 dans /etc/hostapd/hostapd.conf => permet "sudo hostapd_cli all_sta"
 
-Pour aller plus loin, possible de recompiler le driver 8192CU de REALTEK en activant nl80211 (voir 
+Pour aller plus loin, possible de recompiler le driver 8192CU de REALTEK en activant nl80211
 
 
 Installation node 0.12
@@ -78,6 +78,7 @@ sudo service <nom_service> status|start|stop|restart
 tar xzvf < nom_archive >.tar.gz
 unzip <nom_archive>.zip
 df -h => espace disque disponible sur toutes les partitions montées
+apt-cache search <nom_du_paquet>
 
 pour les connected devices : 
 sudo arp
