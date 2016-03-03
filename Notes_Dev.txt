@@ -87,6 +87,7 @@ Outils de développement
 - Glassfish 4 (E:\glassfish4)
 - Librairies Java dans E:\Workspace\libraries
 - Open SSL (C:\OpenSSL-Win32) pour spark-cli
+- SublimeText
 
 GitHub
 ------
@@ -136,6 +137,9 @@ A downloader
 - Jquery
 
 - Voir WSO2 et ActiveMQ
+- voir d3.js pour affichage données
+- voir reveal.js pour animation de slides dans un site web
+- voir opencv et jasperproject (github)
 
 - Noter coordonnées compte Dropbox
 

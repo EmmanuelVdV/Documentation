@@ -59,9 +59,14 @@ Solution 2 :
 Pour aller plus loin, possible de recompiler le driver 8192CU de REALTEK en activant nl80211
 
 
-Installation node 0.12
-----------------------
+Installation node
+-----------------
+v0.12 sur raspberrypi
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install -y nodejs
+
+v4.x sur raspibricq
+curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get install -y nodejs
 
 Installation Express
@@ -70,6 +75,22 @@ http://webiose.com/2014/04/express-js-le-micro-framework-pour-node-js/
 http://code.tutsplus.com/tutorials/build-a-complete-mvc-website-with-expressjs--net-34168
 http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
 
+Installation no-ip (RaspiBricq)
+-------------------------------
+cd ~/Downloads
+wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+tar xf noip-duc-linux.tar.gz
+cd noip-2.1.9-1/
+make
+make install
+Saisie des paramètres de configuration :
+	Account no-ip => cf. pwd
+	Adresse no-ip
+Script de boot : sudo nano /etc/init.d/noip
+sudo chmod 755 /etc/init.d/noip
+sudo /etc/init.d/noip start (ou "stop") => vérification avec "ps aux"
+sudo update-rc.d noip defaults
+sudo update-rc.d -f  noip remove (pour retirer le script du reboot)
 
 Commandes :
 -----------
@@ -79,6 +100,15 @@ tar xzvf < nom_archive >.tar.gz
 unzip <nom_archive>.zip
 df -h => espace disque disponible sur toutes les partitions montées
 apt-cache search <nom_du_paquet>
+liste des addresses IP : "ifconfig -a" ou "ip addr show"
+
+sudo reboot
+sudo halt
+sudo shutdown now
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoremove
 
 pour les connected devices : 
 sudo arp
