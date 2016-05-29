@@ -1,6 +1,6 @@
 node.js et npm
 --------------
-E:\nodejs
+E:\nodejs (update 0.12 le 29/05/2016)
 
 npm install <-g> <nom_du_module>
 -g: global installe dans C:\Users\Emmanuel\AppData\Roaming\npm\node_modules
@@ -11,31 +11,15 @@ Variable d'env. NODE_PATH=E:\nodejs\node_modules\npm\node_modules
 Installation a effectuer depuis fenêtre de commande du MS SDK Windows v7.1 (depuis Start Menu) pour éviter pb kernel31.lib à la compilation node-gyp
 (outils liés: MS Visual Studio C++ Express 2010 + MS SDK Windows 7.1 => compte MS emmanuel.vandevelde@noos.fr Lalal@1234@)
 
-Modules installés:
-- sparknode
-- sparkcloud
-- spark (official SparkJS) => global install
-- spark-cli (spark command line) => global install
-- cylon (robotique spark)
+Modules installés (global install):
+- particle-cli => problème d'installation lors de l'update nodejs du 29/05/2016
 - mocha => module de test / global install
-- express (fmwk web)
+- express (fmwk web) + express-generator
 - nodeclipse (node.js sur eclipse)
-- web
-- bl (BufferList)
-- grunt
+- git
 - strftime (format time)
 - through2-map (Stream mapper)
-
-modules d'apprentissage:
-- levelmeup 
-- learnyounode => terminé (cf. C:\Users\Emmanuel\AppData\Roaming\npm\exos learnyounode)
-- functional-javascript-workshop => commencé
-- expressworks => commencé
-- test-anything
-- planetproto
-- promise-it-wont-hurt
-- async-you
-
+- phonegap (global install)
 
 Autres modules possibles:
 - spark-io et johnny-five (nécessite voodoospark sur Spark Core)
@@ -44,7 +28,7 @@ Autres modules possibles:
 
 Spark Core
 ----------
-www.spark.io/login
+www.particle.io/login
 
 Outils liés:
 - cURL dans C:\Program Files\cURL pour envoyer des commandes HTML en commande en ligne

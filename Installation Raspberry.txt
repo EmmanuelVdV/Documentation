@@ -164,3 +164,5 @@ Gotronic
 http://wiringpi.com/wiringpi-updated-for-the-new-pi-v2/ => lien vers version python ou node.js
 
 Encodeur ?
+
+Système de gestion musicale : Edjing
