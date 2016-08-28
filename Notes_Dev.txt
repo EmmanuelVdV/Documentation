@@ -13,13 +13,13 @@ Installation a effectuer depuis fenêtre de commande du MS SDK Windows v7.1 (depu
 
 Modules installés (global install):
 - particle-cli => problème d'installation lors de l'update nodejs du 29/05/2016
-- mocha => module de test / global install
+- mocha => module de test
 - express (fmwk web) + express-generator
 - nodeclipse (node.js sur eclipse)
 - git
 - strftime (format time)
 - through2-map (Stream mapper)
-- phonegap (global install)
+- cordova et ionic
 
 Autres modules possibles:
 - spark-io et johnny-five (nécessite voodoospark sur Spark Core)
