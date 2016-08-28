@@ -1,0 +1,72 @@
+Install Domoticz
+----------------
+http://www.domoticz.com/wiki/Installing_and_running_Domoticz_on_a_Raspberry_PI
+- Install stable binary version
+	mkdir ~/domoticz
+	cd ~/domoticz
+	wget http://domoticz.sourceforge.net/domoticz_linux_armv7l.tgz
+	tar xvfz domoticz_linux_armv7l.tgz
+	rm domoticz_linux_armv7l.tgz
+- Make Domoticz start at boot time
+	sudo cp domoticz.sh /etc/init.d
+	sudo chmod +x /etc/init.d/domoticz.sh
+	sudo update-rc.d domoticz.sh defaults
+- Test
+	cd domoticz
+	sudo ./domoticz
+	sudo service domoticz.sh start
+
+Connect from web browser
+------------------------
+IPAddress:8080 ou raspibricq.local:8080
+
+Eventuellement : http://www.latelierdugeek.fr/2015/02/02/domotique-partie-8-ajout-du-support-du-z-wave-dans-domoticz/
+
+Ouverture sur extérieur
+-----------------------
+Règles routage IPForward sur Router ou "Inbound" / "Outbound" firewall rules (sur port 443 https) => adresse statique de la Raspibricq
+Enregistrement d'une adresse sur no-ip.org
+Ajout du client no-ip sur Raspberry
+Mise en place d'un mot de passe sur domoticz
+
+Ajout d'un Qubino
+-----------------
+- Eteindre Raspberry et débrancher le stick Zwave
+- Cliquer sur le stick (clignote bleu)
+- Brancher le Qubino
+=> détection dans les 5 secondes qui suivent le branchement du Qubino (reste bleu deux secondes)
+- Sinon, presser 2 secondes sur le bouton d'association du Qubino
+- Redémarrer la raspberrypi et rebrancher le stick
+=> le Qubino est visible sur le Hardware
+
+Seconde méthode :
+- Ajouter un noeud dans domoticz => le stick se met en mode découverte
+- Cliquer sur le bouton d'association du Qubino
+
+Retrait d'un Qubino
+-------------------
+- Eteindre Raspberry et débrancher le stick
+- Cliquer sur le stick (clignote orange)
+- Presser 6 secondes sur le bouton d'association
+
+Configuration domoticz
+----------------------
+- L'association fait apparaître un nouveau matériel (hardware) comme noeud sur le stick Zwave
+- Dans le menu "Dispositifs" (Devices), on trouve 4 lignes de type "Lighting 2"
+- Sur le premier dispositif (nommé Level par défaut), cliquer sur la flèche verte et créer un Dispositif en changeant son nom (Radiateur xxx)
+- Dans l'onglet "Interrupteurs" (Switches), créer un nouveau switch en reprenant le Dispositif "Radiateur xxx" nouvellement créé
+
+- Dans l'onglet "Matériel", créer un matériel virtuel (type = "Dummy")
+- Dans l'onglet "Interrupteurs", créer un Dispositif s'appuyant sur le matériel virtuel : par exemple "Radiateur hors gel" ou "Radiateur confort"
+- Dans le menu "Réglages" / "Plus d'options" / "Evénements", créer des événements "si radiateur hors gel = On, alors set radiateur confort = off, Radiateur xxx level = x%..." => permet de gérer la radiateurs globalement avec des interrupteurs "Arrêt", "Hors gel", "Confort", etc.
+- Ajouter les interrupteurs virtuels dans le tableau de bord pour une gestion centralisée
+
+- Création d'un switch "selector" multi-boutons pour gérer globalement eco/confort/hgel... (voir https://www.domoticz.com/forum/viewtopic.php?f=8&t=9315&p=66911#p66911)
+
+A faire
+-------
+Achat d'un détecteur de fumée Zwave + onduleur pour gérer coupures
+Ajout des modes Confort-1, Confort-2 et Eco dans Domoticz
+Définition de scénarios
+	1. Zones jour/nuit
+	2. Selon température min / max de la sonde
