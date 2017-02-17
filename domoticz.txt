@@ -24,10 +24,16 @@ Eventuellement : http://www.latelierdugeek.fr/2015/02/02/domotique-partie-8-ajou
 
 Ouverture sur extérieur
 -----------------------
+Solution routeur générique :
 Règles routage IPForward sur Router ou "Inbound" / "Outbound" firewall rules (sur port 443 https) => adresse statique de la Raspibricq
 Enregistrement d'une adresse sur no-ip.org
 Ajout du client no-ip sur Raspberry
 Mise en place d'un mot de passe sur domoticz
+
+Solution SFR box (17/02/2017) :
+Enregistrement DynDNS (compte no-ip) sur la Box
+Déclaration adresse statique DHCP sur la box : 192.168.1.75 sur la box
+Enregistrement règle NAT port 443 vers 192.168.1.75 sur la box
 
 Ajout d'un Qubino
 -----------------

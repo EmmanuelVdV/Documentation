@@ -90,16 +90,16 @@ Script de boot : sudo nano /etc/init.d/noip
 sudo chmod 755 /etc/init.d/noip
 sudo /etc/init.d/noip start (ou "stop") => vérification avec "ps aux"
 sudo update-rc.d noip defaults
-sudo update-rc.d -f  noip remove (pour retirer le script du reboot)
+sudo update-rc.d -f  noip remove (pour retirer le script du reboot : fait le 17/02/2017)
 
 IP statique (Raspibricq)
 ------------------------
 sudo nano /etc/dhcpcd.conf
 ajout des lignes suivantes en fin de fichier :
 interface eth0
-static ip_address=192.168.0.75/24
-static routers=192.168.0.1
-static domain_name_servers=192.168.0.1
+static ip_address=192.168.1.75/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
 
 Commandes :
 -----------

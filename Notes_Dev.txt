@@ -1,6 +1,6 @@
 node.js et npm
 --------------
-E:\nodejs (update 0.12 le 29/05/2016)
+E:\nodejs (update 6.9.2 le 29/12/2016)
 
 npm install <-g> <nom_du_module>
 -g: global installe dans C:\Users\Emmanuel\AppData\Roaming\npm\node_modules
