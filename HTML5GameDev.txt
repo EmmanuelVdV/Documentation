@@ -1,0 +1,35 @@
+https://hacks.mozilla.org/2013/09/getting-started-with-html5-game-development/
+Forum : http://www.html5gamedevs.com/
+http://html5gamedevelopment.com/
+http://gameinternals.com/
+
+Tool :
+https://software.intel.com/en-us/intel-xdk
+http://fr.esotericsoftware.com/ (Spine)
+https://www.codeandweb.com (TexturePacker, SpriteIlluminator, PhysicsEditor)
+http://www.mapeditor.org/ (Tiled Map Editor)
+Piksel (pixel art)
+Paint Of Persia (Rotoscopie)
+Bosca Ceoil, BFXR (son)
+Game Maker Studio
+Sketch Nation
+Scratch
+RPG Maker (jeu de rôle)
+Adventure Game Studio (jeu d'aventures)
+Construct2
+Stencyl
+Kodu (jeu 3D)
+Twine (histoire interactive sans image) ou Ren'py (idem avec images)
+itch.io (publication)
+
+Art :
+https://2d-game-art-tutorials.zeef.com/chris.hildenbrand (Inkscape)
+http://www.gamefromscratch.com/ (blender)
+http://tavmjong.free.fr/INKSCAPE/MANUAL/html_fr/ (Inskape)
+http://opengameart.org/
+incompetech, freesound.org
+
+Phaser :
+http://apprendre-le-js.com/mmo-phaser-express-socket-par-1/
+https://developer.mozilla.org/fr/docs/Games/Workflows/HTML5_Gamedev_Phaser_Device_Orientation_FR
+http://www.soluka.fr/blog/jeux/phaser-creer-flappy-bird-en-html5-canvas/

@@ -122,6 +122,7 @@ A downloader
 
 - Voir WSO2 et ActiveMQ
 - voir d3.js pour affichage données
+- voir three.js sur graphisme 3D webGL (+ webglfundamentals.org)
 - voir reveal.js pour animation de slides dans un site web
 - voir opencv et jasperproject (github)
 

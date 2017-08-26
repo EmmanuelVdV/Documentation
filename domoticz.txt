@@ -35,6 +35,12 @@ Enregistrement DynDNS (compte no-ip) sur la Box
 Déclaration adresse statique DHCP sur la box : 192.168.1.75 sur la box
 Enregistrement règle NAT port 443 vers 192.168.1.75 sur la box
 
+Solution Orange LiveBox (08/2017)
+Enregistrement DynDNS (compte no-ip) sur la Box (avec identifiant et pas adresse mail)
+Reconnaissance IP statique de la Pi automatiquement sur la box
+Enregistrement règle NAT port 443 in/out vers la Pi sur la box
+Niveau sécurité moyen sur le firewall de la box
+
 Ajout d'un Qubino
 -----------------
 - Eteindre Raspberry et débrancher le stick Zwave
