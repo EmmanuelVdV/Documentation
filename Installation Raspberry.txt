@@ -12,7 +12,7 @@ a. get IP address from network router
 b. set IP address on the raspbian before boot
 - http://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-beginners/ and http://elinux.org/RPi_cmdline.txt
 
-- Putty SSH 192.168.0.2 (with computer linked on same network)
+- Putty SSH 192.168.0.2 (with computer linked on same network) (Putty 192.168.1.75 for Raspibricq)
 - sudo raspi-config
 => extend partition
 => choose locale fr_FR.UTF8
@@ -175,3 +175,5 @@ http://wiringpi.com/wiringpi-updated-for-the-new-pi-v2/ => lien vers version pyt
 Encodeur ?
 
 Système de gestion musicale : Edjing
+
+easyEDA

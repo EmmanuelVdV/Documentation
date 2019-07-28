@@ -33,3 +33,9 @@ Phaser :
 http://apprendre-le-js.com/mmo-phaser-express-socket-par-1/
 https://developer.mozilla.org/fr/docs/Games/Workflows/HTML5_Gamedev_Phaser_Device_Orientation_FR
 http://www.soluka.fr/blog/jeux/phaser-creer-flappy-bird-en-html5-canvas/
+===>>> Cours Zenva
+
+
+Chaines Youtube :
+Coding Train (Dan Shiffman)
+https://generativeartistry.com/
